@@ -1,0 +1,644 @@
+/* Universal Styles */
+
+@font-face {
+    font-family: 'Piscolabis';
+    src: url('materiales/fonts/Piscolabis-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Laborat-Regular';
+    src: url('materiales/fonts/Laborat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Laborat-Medium';
+    src: url('materiales/fonts/Laborat-Medium.ttf');
+}
+
+html{
+    font-family: "Piscolabis";
+    cursor: url(materiales/imagenes/cursor.png) , auto;
+    user-select: none;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+#center{
+    text-align: center;
+}
+
+h2{
+    font-size: 3.2rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin:0;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin:0.5rem 0 0;
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-family: "Laborat-Regular";
+    color: #FFFFFF;
+}
+
+/* Header Styles */
+
+header{
+    margin:1rem 1rem 1rem;
+    background-image:url(materiales/imagenes/fondo_header.png);
+    background-attachment:fixed;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+nav{
+    padding: 1rem 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+header h1{
+    color:#FFFFFF;
+    padding: 1rem 2rem 0.7rem;
+    font-size: 7.5rem;
+    line-height: 8rem;
+    font-weight: normal;
+    margin: 7.3rem 0 0;
+}
+
+.nav-menu{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 0%;
+    background: rgba(65, 65, 65, 0.066);
+    border-radius: 30px;
+   }
+   
+   .nav-links li{
+       font-family: "Laborat-Regular";
+       font-weight: 500;
+       font-size: 1.1rem;
+       text-align: center;
+       padding: 0.8rem 0 0.8rem 2rem;
+       color: #FFFFFF;
+       transition: color 0.15s;
+       cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+   }
+
+   .nav-links li:hover{
+    color: #006dad;
+   }
+   
+   .nav-links li+li{ 
+       padding-left: 2rem;
+   }
+
+   .nav-links li:last-child{
+        padding-right: 2rem;
+   }
+
+   .nav-button{
+    border-radius: 30px;
+    background: #FFFFFF;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    padding: 12px 25px;
+    color: #34BCFF;
+    font-family: "Laborat-Regular";
+    text-decoration: none;
+    font-size: 1.1rem;
+    border:none;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+   }
+
+
+#logotipo{
+    height: 3.5rem;
+    margin: 0 2rem 0 0;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+    transition-duration: 1.5s;
+}
+
+#logotipo:hover{
+    transform: scale(1.1);
+}
+
+/* Sub-Header Styles */
+
+.sub-header{
+    background: #e4f9ff;
+    align-items: center;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin:1.2rem 1rem 10rem;
+}
+
+.perks{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:0;
+}
+
+.perks-li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Laborat-Regular";
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+    color: #0b0b0b;
+    padding: 0.25rem 0 0.25rem;
+}
+
+#tick{
+    height: 1.2rem;
+    color: #34BCFF;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+/* Section 1 Styles */
+
+.section-1{
+    margin:2.2rem 1rem 10rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem 1.5rem;
+}
+
+.container-1{
+    border-radius: 30px;
+    background-image: url(materiales/imagenes/fondo_section1.png);
+    background-attachment:fixed;
+    background-size: cover;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#img1{
+    padding:3.5rem 0;
+}
+
+.container-2{
+    border-radius: 30px;
+    background-image: url(materiales/imagenes/fondo_section2.png);
+    background-attachment:fixed;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-3{
+    border-radius: 30px;
+    background-image: url(materiales/imagenes/fondo_section3.png);
+    background-attachment:fixed;
+    background-size:cover;
+    grid-column: 3 / 4;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-3 h2{
+    line-height: 3.4rem;
+}
+
+/* Section 2 Styles */
+
+.section-2{
+    margin:2.2rem 8rem 3rem;
+    display: grid;
+    grid-template-rows: 2% 98%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+}
+
+/* Section 2 Sub-Styles */
+
+.paddington{
+    padding: 1.5rem;
+}
+
+.section-2 p{
+    color: #5e728d;  
+    font-size: 1rem;
+}
+
+#price-tag{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+#price-tag p{
+    margin: 1.5rem 0 1rem
+}
+
+#p-big{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+#p-big p{
+    color:#34BCFF;
+    margin:0;
+}
+
+#p-big p:first-child{
+    font-size: 4rem;
+    padding-right: 0.5rem;
+}
+
+.perks-list{
+    margin: 2rem 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.perks-li-2{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Laborat-Regular";
+    font-size: 1.1rem;
+    text-align: center;
+    align-items: center;
+    color: #333333;
+    padding: 0.4rem 0 ;
+}
+
+/* Price Containers */
+
+.price-1{
+    border-radius: 2rem;
+    border:0.2rem solid #34BCFF;
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.price-2{
+    border-radius: 2rem;
+    border: 0.2rem solid #34BCFF;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+.price-3{
+    border-radius: 2rem;
+    border:0.2rem solid #34BCFF;
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.price-button{
+    border-radius: 1rem;
+    color: #34BCFF;
+    background-color: #FFFFFF;
+    transition: background-color 0.25s;
+    border:0.15rem solid #34BCFF;
+    font-family: "Piscolabis";
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    font-weight: normal;
+    margin: 1.2rem 0 0.4rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+.price-button-2{
+    transition-duration: 0.25s;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    background-color: #34BCFF;
+    border:0.15rem solid #34BCFF;
+    font-family: "Piscolabis";
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    font-weight: normal;
+    margin: 1.2rem 0 0.4rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+.price-button:hover{
+    background-color: #dff4ff;
+}
+
+.price-button-2:hover{
+    background-color: #00A8FC;
+    border-color: #00A8FC;
+}
+
+#downarrow{
+    height: 0.9rem;
+    color: #34BCFF;
+    padding-left: 0.5rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+#line{
+    height: 0.27rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.1rem;
+}
+
+.mostsell{
+    background-color: #34BCFF;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 1.8rem 1.8rem 0px 0px;
+    padding: 0.5rem 0;
+}
+
+.mostsell h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Section 3 Styles */
+
+.section-3{
+    position: relative;
+    margin:2.75rem 0 12rem;
+    padding: 20rem 0;
+    overflow: hidden;
+}
+
+.item-content{
+ display:flex;
+ flex-flow: column nowrap;
+}
+
+.item-content img{
+    border-radius: 2rem;
+    margin: 0 0 2rem;
+    height: auto;
+    width: 40rem;
+}
+
+.item-content h2{
+    color: #0b0b0b;
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.item-content p{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: "Laborat-Regular";
+    color: #374355;
+}
+
+/* Carousel Styles*/
+
+.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .item.active {
+    opacity: 1;
+    z-index: 99;
+  }
+  
+  .item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: scale(0.8) translate(-190%, -60%);
+  }
+  
+  .item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform:scale(0.8) translate(65%, -60%);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70rem;
+    z-index: 100;
+  }
+
+/* Button Styles (for Carousel) */
+
+.button-container .button {
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+    position: relative;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 32rem;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
+
+/* Section 4 Styles */
+
+.section-4{
+    margin:2.2rem 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#qst-ans{
+    grid-column: 1/2;
+    margin: 0;
+}
+
+.questions{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: normal;
+    list-style: none;
+    margin: 0 0 2rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+details svg{
+    height: 2rem;
+    fill:#34BCFF;
+    transition-duration: 0.5s;
+}
+
+details[open] svg{
+    transform: rotate(45deg);
+    fill:#0076B9;
+    transition-duration: 0.5s;
+}
+  
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+    animation-iteration-count: inherit;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+
+#push-line{
+    border-top: 0.05rem solid #8b8b8b;
+    padding: 0 0 2rem;
+}
+
+.answer{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: "Laborat-Regular";
+    color: #374355;
+}
+
+/* Footer Styles */
+
+footer{
+    margin:1rem 1rem 0.5rem;
+    background-image:url(materiales/imagenes/fondo_footerr.png);
+    background-attachment:fixed;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer img{
+    height: 5rem;
+    padding: 8rem 0;
+}
+
+.ft-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.ft-nav div{
+    padding: 0 1.4rem;
+}
+
+.ft-nav div h4{
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.ft-nav div p{
+    line-height: 2.1rem;
+    font-size: 1.1rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+/* Last <p> Styles*/
+
+.last-p{
+display: flex;
+justify-content: space-between;
+margin:.5rem 2rem .3rem;
+}
+
+.last-p p{
+    font-family: 'Laborat-Medium';
+    color:#34BCFF;
+    margin:0;
+    font-size: 1rem;
+    cursor: url(materiales/imagenes/cursor-pointer.png) , pointer;
+}
+
+.last-p-lasted{
+display: flex;
+justify-content: space-between;
+}
+
+.last-p-lasted p{
+    padding: 0 0 0 1rem;
+    margin:0;
+    color: #006dad;
+}
